@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import ToDoList from './components/to-do-list/ToDoList';
+import Hangman from './components/hangman/Hangman';
+import TicTacToeGame from './components/tic-tac-toe/TicTacToeGame';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ToDoList />
+      <Hangman />
+      <TicTacToeGame />
     </div>
   );
 }
