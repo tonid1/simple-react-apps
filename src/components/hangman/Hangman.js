@@ -16,7 +16,7 @@ function Hangman(){
   const [guess, setGuess] = useState('');
   const [letter, setLetter] = useState('');
   const [alertMessage, setAlertMessage] = useState('')
-  const [images, setImages] = useState([H0, H1, H2, H3, H4, H5, H6]);
+  const [images] = useState([H0, H1, H2, H3, H4, H5, H6]);
   const [active, setActive] = useState(images[0])
   const [misses, setMisses] = useState([]);
   const focus = useRef(null);
