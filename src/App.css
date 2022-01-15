@@ -183,3 +183,75 @@
 .info-text{
   font-size: 24px;
 }
+
+
+/* CALCULATOR */
+
+.numbers-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2px;
+  row-gap: 2px;
+  width: 10%;
+}
+
+.calculator-button{
+  padding: 8px;
+  outline: none;
+  border: none;
+  background: #eee;
+  font-weight: 700;
+  color: #000;
+  font-size: 16px;
+}
+
+.clear{
+  background: rgb(255, 130, 99);
+}
+
+.equals{
+  background: rgb(128, 183, 255);
+}
+
+.calculator-section{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ddd;
+  position: relative;
+}
+
+.calculator-section:before{
+  content: "CALCULATOR";
+  font-size: 12vw;
+  font-weight: 900;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #000;
+  opacity: 0.3;
+}
+
+.expression-div{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+.expression-title{
+  width: 40%;
+  text-align: right;
+}
+
+.expression-title h2{
+  font-weight: 500;
+}
+
+.expression{
+  text-align: left;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: row;
+}
