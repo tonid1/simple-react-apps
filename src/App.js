@@ -7,10 +7,10 @@ import Fields from './components/calculator/Fields';
 function App() {
   return (
     <div>
-      <Fields />
       <ToDoList />
       <Hangman />
       <TicTacToeGame />
+      <Fields />
     </div>
   );
 }
